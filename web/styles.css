@@ -1,0 +1,105 @@
+
+body {
+    font-family: 'Poiret One', cursive;
+    background-color: white;
+    color: black;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: black;
+    background-image: url("images/NewZhome.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#header {
+    z-index:2;       /* added for fixed layout: keeps titleNav on top of other elemements */
+    position:fixed; /* added for fixed layout */
+    top:0px;        /* added for fixed layout */
+    left:0px;       /* added for fixed layout */
+    width:100%;     /* added for fixed layout */
+    color:white;
+    background-color: black;
+    height: 79px;
+    min-width: 600px;  /* prevents nav links from wrapping when browser window is too narrow */
+    text-align: center;
+    line-height: 79px;
+}
+#footer {
+    z-index:2;       /* added for fixed layout: keeps footer on top of other elemements */
+    width: 100%;     /* added for fixed layout */
+    position:fixed;  /* added for fixed layout */
+    bottom:0px;      /* added for fixed layout */
+    left:0px;        /* added for fixed layout */
+
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:10px;
+    font-size:15px;
+    letter-spacing:0.75px;
+    background-color: black;
+    font-size: 20px;
+}
+#pageTitle {
+    font-size: 60px;
+    letter-spacing: 10px;
+}
+#nav {
+    float: right;
+    width: 150px;
+    height: 170px;
+    /*margin-top: 50px;*/
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 25px 0 0 25px;
+    background-color: #E8FEFF;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.navLink {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 30px;
+}
+.navLink:hover {
+    color: #CC485F;
+}
+#content {
+    margin: 129px 300px 75px 40px;   /* added for fixed layout: prevent content from being hidden under titleNav */
+    overflow: hidden;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #E8FEFF;
+    opacity: 0.2;
+    filter: alpha(opacity=20);
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+}
+#content:hover {
+    -webkit-transition: all 600ms ease;
+    -moz-transition: all 600ms ease;
+    -ms-transition: all 600ms ease;
+    -o-transition: all 600ms ease;
+    transition: all 600ms ease;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.quoteRef {
+    float: right;
+}
+#labsContent {
+    margin: 129px 300px 75px 40px;   /* added for fixed layout: prevent content from being hidden under titleNav */
+    overflow: hidden;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #E8FEFF;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
